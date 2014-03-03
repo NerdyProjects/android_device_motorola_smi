@@ -4,7 +4,7 @@ RAZR_I_IMAGE_PATH=$1
 OUTPUT_PATH=vendor
 
 if [ -z "$RAZR_I_IMAGE_PATH" ]; then
-  echo "usage: $0 Path_to_razr-i_system_folder"
+  echo "usage: $0 Path_to_razr-i_image_folder"
   exit 1
 fi
 
@@ -16,7 +16,7 @@ for FILE in `cat proprietary_files`; do
   else
     NEW_NAME=$FILE
   fi
-  DIR=`dirname $FILE`
+  DIR=`dirname $NEW_NAME`
   if [ ! -d "$OUTPUT_PATH/$DIR" ]; then
     mkdir -p "$OUTPUT_PATH/$DIR"
   fi
