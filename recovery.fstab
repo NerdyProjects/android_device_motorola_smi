@@ -1,10 +1,10 @@
-# mount point	fstype    device    	[device2]
-
-/boot       mtd         boot
-/cache      yaffs2      cache
-/data       yaffs2      userdata
-/misc       mtd         misc
-/recovery   mtd         recovery
-/sdcard     vfat        /dev/block/mmcblk0p1        /dev/block/mmcblk0
-/system     yaffs2      system
-/sd-ext     ext4        /dev/block/mmcblk0p2
+/dev/block/mmcblk0p16 /system ext4 noatime defaults
+/dev/block/mmcblk0p14 /cache ext4 noatime defaults 
+/dev/block/mmcblk0p5 /boot emmc noatime defaults 
+/dev/block/mmcblk0p6 /recovery emmc noatime defaults 
+/dev/block/mmcblk0p13 /misc emmc noatime defaults 
+/dev/block/mmcblk0p9 /panic raw noatime defaults 
+/dev/block/mmcblk0p17 /data ext4 noatime defaults 
+/dev/block/mmcblk0p12 /pds ext4 noatime defaults 
+/dev/block/mmcblk1p1 /external_sd vfat noatime defaults 
+/dev/block/mmcblk0p17 /sdcard datamedia noatime defaults 

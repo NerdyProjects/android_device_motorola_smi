@@ -1,0 +1,7 @@
+/dev/block/mmcblk0p16 /system ext4 ro wait
+/dev/block/mmcblk0p14 /cache ext4 nosuid,nodev,nodiratime,nodelalloc,barrier=0,data=ordered,noatime wait,check
+#/dev/block/mmcblk0p9 /panic raw noatime defaults
+/dev/block/mmcblk0p17 /data ext4 nosuid,nodev,nodiratime,nodelalloc,barrier=0,data=ordered,noatime,noauto_da_alloc wait,check
+/dev/block/mmcblk0p12 /pds ext4 noatime defaults
+#/dev/block/mmcblk1p1 /external_sd vfat noatime defaults
+#/dev/block/mmcblk0p17 /sdcard datamedia noatime defaults
